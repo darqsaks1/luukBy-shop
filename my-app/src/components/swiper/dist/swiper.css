@@ -1,0 +1,13 @@
+.swiper-first-slide {
+  width: 90%;
+  margin: 0 auto;
+  height: 300px;
+  margin-top: 10px;
+  background-color: pink;
+  border-radius: 20px;
+}
+
+.first_Sl {
+  background-image: url("../../assets/swiper-IMAGES/first-swiper/sw1_1sld.png");
+  background-size: cover;
+}

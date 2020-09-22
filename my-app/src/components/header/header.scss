@@ -1,0 +1,49 @@
+.header {
+  height: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #00b4cc;
+  .header-list {
+    display: inherit;
+    flex-direction: inherit;
+    div {
+      display: inherit;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 20px;
+        text-align: center;
+        &:hover {
+          color: red;
+        }
+      }
+    }
+  }
+  .header-bucket {
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+
+    img {
+      width: 45px;
+      height: 40px;
+    }
+    div {
+      position: relative;
+      left: px;
+      bottom: 10px;
+      height: 23px;
+      font-size: 25px;
+      background-color: inherit;
+      display: block;
+      width: auto;
+      z-index: 1;
+    }
+  }
+}

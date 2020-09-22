@@ -1,0 +1,21 @@
+@import "./components/header/header.scss";
+@import "./components/search/search.scss";
+@import "./components/categories/title-categories/title-categories.scss";
+@import "./components/categories/human-categories/human-categories.scss";
+@import "./components/categories/blocks-categories/block-categories.scss";
+@import "./components/swiper/swiper.scss";
+@import "./components/products-sections/first-section/first-product-section.scss";
+@import "./components/commercial/first-commercial/first-commercial.scss";
+@import "./components/footer/footer.scss";
+@import "./assets/layots/layos.scss";
+body {
+  margin: 0;
+  font-family: "Merriweather", serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

@@ -1,0 +1,23 @@
+.first-product_container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: auto;
+  justify-content: space-around;
+  align-items: center;
+  a {
+    width: 40%;
+    height: 350px;
+    padding: 20px;
+    .product-card {
+      border: 1px solid black;
+      border-radius: 10px;
+      width: 90%;
+      height: 100%;
+      img {
+        width: 200px;
+        height: 200px;
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.first-commercial_section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.first-commercial_section .commercial-block {
+  width: 500px;
+  height: 100px;
+  border: 1px solid black;
+  background: url("../../../assets/swiper-IMAGES/adversting/tittle1.png");
+  background-size: contain;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+}
