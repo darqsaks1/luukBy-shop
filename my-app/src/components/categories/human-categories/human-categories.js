@@ -5,17 +5,17 @@ const HumanCategories = () => {
         <div className="human-categories">
             <h2> Выберите товар для себя</h2>
             <div className ='human-categories-list'>
-                <div class='man'>
+                <div className='man'>
                     <a href='/'>
                    Для мужчин
                     </a>
                 </div>
-                <div class='girl'>
+                <div className='girl'>
                     <a href='/'>
                   Для женщин
                     </a>
                 </div>
-                <div class='child'>
+                <div className='child'>
                     <a href='/'>
                    Для детей
                     </a>

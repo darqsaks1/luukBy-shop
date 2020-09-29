@@ -1,7 +1,7 @@
 import React from 'react';
 
 
-const SecondProductSection = () => { 
+const SecondProductSection = () => {
     const renderSections = () => {
         let arr = [1, 2, 3, 4, 5]
         let arr1 = [6, 7, 8, 9, 10]
@@ -16,7 +16,7 @@ const SecondProductSection = () => {
                 </div>
             )
         })
-        let array1 = arr1.map((item,i) => {
+        let array1 = arr1.map((item, i) => {
             return (
                 <div className='product-card'>
                     <div className='img'>

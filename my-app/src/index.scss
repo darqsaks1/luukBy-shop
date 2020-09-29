@@ -1,5 +1,5 @@
 @import "./components/header/header.scss";
-@import "./components/search/search.scss";
+@import "./components/title/title.scss";
 @import "./components/categories/title-categories/title-categories.scss";
 @import "./components/categories/human-categories/human-categories.scss";
 @import "./components/categories/blocks-categories/block-categories.scss";
@@ -8,9 +8,15 @@
 @import "./components/commercial/first-commercial/first-commercial.scss";
 @import "./components/footer/footer.scss";
 @import "./assets/layots/layos.scss";
+@import "./components/about-shop/about-shop.scss";
+@import "./components/payment/payment.scss";
+@import "./components/bucket-page/bucket-page.scss";
+@import "./components/prod-lending/prod-lending.scss";
+
 body {
-  margin: 0;
-  font-family: "Merriweather", serif;
+  margin: 0 auto;
+  max-width: 1440px;
+  font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -18,4 +24,13 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+.active {
+  border-bottom: 1px solid #111111;
+  box-sizing: border-box;
+}
+
+html {
+  --swiper-theme-color: red;
 }
