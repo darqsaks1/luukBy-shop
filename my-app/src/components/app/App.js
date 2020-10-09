@@ -3,28 +3,24 @@ import { useSelector } from 'react-redux';
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
 import Header from '../header/header';
 import Title from '../title/title';
-import TitleCategories from '../categories/title-categories/title-categories';
-import BlocksCategories from '../categories/blocks-categories/block-categories'
-import HumanCategories from '../categories/human-categories/human-categories'
 import MainSwiper from '../swiper/main-swiper'
-import SwiperSecondSection from '../swiper/swiper-second-section'
-import FirstProductSection from '../products-sections/first-section/first-product-section'
-import SecondProductSection from '../products-sections/second-prod-section/second-product-section'
-import FirstCommercial from '../commercial/first-commercial/first-commercial'
-import Recomendation from '../recomendation/recomendation'
+import HitProducts from '../hit-products/hit-products'
+import Categories from '../categories/categories'
+import Banner from '../banner/banner'
+import Products from '../products/products'
 import Footer from '../footer/footer'
 import './App.scss';
-
-
 import AboutShop from '../about-shop/about-shop'
 import Payment from '../payment/payment';
 import BucketPage from '../bucket-page/bucket-page';
 import ProdLanding from '../prod-lending/prod-lending';
-import PagesRouter from './router/pages-router'
-
+import Shop from '../shop/shop'
+import Order from '../order/order'
+import Politics from '../politics/politics'
+import Сontacts from '../contacts/contacts'
+import Delivery from '../delivery/delivery'
 const App = () => {
   const productHref = useSelector(state => state.shop.productHref);
-
   return (
     <div className="App">
 
@@ -33,21 +29,17 @@ const App = () => {
 
       <Switch>
         <Route exact path="/">
-
           <MainSwiper />
-          <HumanCategories />
-          <FirstProductSection
-          />
-          <FirstCommercial />
-          <BlocksCategories />
-          {/* <SwiperSecondSection /> */}
-          <FirstProductSection />
-          {/* <SecondProductSection /> */}
-          <Recomendation />
-          <FirstCommercial />
+          <HitProducts />
+          <Categories />
+          <Banner />
+          <Products />
         </Route>
         <Route exact path='/about'>
           <AboutShop />
+        </Route>
+        <Route exact path='/shop'>
+          <Shop />
         </Route>
         <Route exact path='/bucket'>
           <BucketPage />
@@ -55,11 +47,26 @@ const App = () => {
         <Route exact path='/payment'>
           <Payment />
         </Route>
+        <Route exact path='/delivery'>
+          <Delivery />
+        </Route>
         <Route exact path='/productLanding'>
           < ProdLanding />
         </Route>
+        <Route exact path='/order'>
+          < Order />
+        </Route>
+        <Route exact path='/politics'>
+          < Politics />
+        </Route>
+        <Route exact path='/contacts'>
+          < Сontacts />
+        </Route>
       </Switch>
-      <Footer />
+      <div class='test'>
+        <Footer />
+      </div>
+
 
     </div>
   );

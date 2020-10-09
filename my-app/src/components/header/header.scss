@@ -11,10 +11,19 @@
   font-size: 15px;
   line-height: 20px;
   background-color: rgba(51, 51, 51, 1);
+  @media (max-width: 620px) {
+    justify-content: space-between;
+  }
   .header-list {
     margin-left: 101px;
     display: inherit;
     flex-direction: inherit;
+    @media (max-width: 1024px) {
+      margin-left: 0;
+    }
+    @media (max-width: 620px) {
+      display: none;
+    }
     div {
       display: inherit;
       justify-content: center;
@@ -23,7 +32,6 @@
       a {
         text-decoration: none;
         color: #ffffff;
-
         text-align: center;
       }
     }
@@ -34,11 +42,22 @@
     text-align: center;
     display: flex;
     flex-direction: row;
+    @media (max-width: 1024px) {
+      margin-right: 0;
+    }
+    @media (max-width: 620px) {
+      align-self: flex-end;
+    }
     .phone-link {
       margin-right: 86px;
+      @media (min-width: 621px) and (max-width: 927px) {
+        margin-right: 20px;
+      }
+      @media (max-width: 620px) {
+        margin-right:10px;
+      }
       img {
         margin-right: 5px;
-       
       }
     }
     a {
@@ -65,5 +84,12 @@
         z-index: 1;
       }
     }
+  }
+}
+
+.header-none {
+  display: none;
+  @media (max-width: 620px) {
+    display: block;
   }
 }

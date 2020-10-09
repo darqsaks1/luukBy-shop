@@ -15,13 +15,13 @@ const Title = () => {
             </div>
             <div className="title-list">
                 <div>
-                    <NavLink to='./' activeClassName="active"
+                    <NavLink to='./' activeClassName="active" id='mainID'
                     >
                         ГЛАВНАЯ
                     </NavLink>
                 </div>
                 <div>
-                    <NavLink to='./about' activeClassName="active"
+                    <NavLink to='./shop' activeClassName="active"
                     >
                         МАГАЗИН
                     </NavLink>
@@ -46,9 +46,7 @@ const Title = () => {
                 </div>
             </div>
             <div className='bucket-list'>
-                <div className='search-icon-wrapper'>
-                    <img src={searchImg} alt='searh-icon' />
-                </div>
+
                 <Link to='/bucket'>
                     <div className='bucket-icon-wrapper'>
                         <img src={bucketImg} alt='searh-icon' />

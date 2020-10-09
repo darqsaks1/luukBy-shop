@@ -1,3 +1,7 @@
 export const SET_BUCKET = 'GET_BUCKET';
 export const SET_PRODUCT_PAGE = 'SET_PRODUCT_PAGE';
 export const DELETE_BUCKET = 'DELETE_BUCKET';
+export const SET_NUMBER_PLUS = 'SET_NUMBER_PLUS';
+export const SET_NUMBER_MINUS = 'SET_NUMBER_MINUS';
+export const ORDER_BUCKET = 'ORDER_BUCKET'
+export const SET_CATEGORIES = 'SET_CATEGORIES'

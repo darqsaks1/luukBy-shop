@@ -1,0 +1,192 @@
+.banner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .bg {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: 100%;
+    background-repeat: no-repeat repeat;
+    background-position: center;
+    div {
+      background-image: url("../../assets/z1.svg");
+      width: 100%;
+      background-size: 100%;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: auto;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      @media (max-width: 1024px) {
+        background-image: url("../../assets/z2.svg");
+      }
+
+      @media (max-width: 768px) {
+        background-image: url("../../assets/z3.svg");
+        height: 300px;
+      }
+      @media (max-width: 768px) {
+        background-image: url("../../assets/z3.svg");
+        height: 300px;
+      }
+      @media (max-width: 480px) {
+        background-image: url("../../assets/z4.svg");
+        height: 300px;
+      }
+      @media (max-width: 360px) {
+        background-image: url("../../assets/z5.svg");
+        height: 400px;
+      }
+      .smile {
+        position: relative;
+
+        height: auto;
+        width: auto;
+        @media (max-width: 1024px) {
+          width: 341px;
+          height: 222px;
+        }
+        @media (max-width: 768px) {
+          width: 260px;
+          height: 160px;
+        }
+      }
+    }
+    // .action {
+    //   position: relative;
+    //   bottom: 30px;
+    //   @media (max-width: 1135px) {
+    //     left: -175px;
+    //   }
+    //   .actions {
+    //     width: auto;
+    //     height: auto;
+    //   }
+    // }
+    // .child {
+    //   z-index: 2;
+    //   width: auto;
+    //   height: auto;
+    //   @media (max-width: 1135px) {
+    //     left: -175px;
+    //     position: relative;
+    //   }
+    // }
+    // .bounc {
+    //   position: relative;
+    //   top: 60px;
+    //   left: -80px;
+    //   .seventeen {
+    //     width: auto;
+    //     height: auto;
+    //     @media (max-width: 1135px) {
+    //       left: -175px;
+    //       position: relative;
+    //     }
+    //     @media (max-width: 785px) {
+    //       width: 200.97px;
+    //       height: 56.29px;
+    //     }
+    //   }
+    // }
+
+    // .fiveteen {
+    //   position: relative;
+    //   left: -110px;
+    //   bottom: 10px;
+    //   width: auto;
+    //   height: auto;
+    //   @media (max-width: 1288px) {
+    //     left: -170px;
+    //     bottom: 50px;
+    //   }
+    //   @media (max-width: 1230px) {
+    //     left: -270px;
+    //     bottom: 100px;
+    //   }
+    //   @media (max-width: 1135px) {
+    //     left: -450px;
+    //   }
+    //   @media (max-width: 945px) {
+    //     left: -650px;
+    //   }
+    // }
+    // .skidki {
+    //   position: relative;
+    //   @media (max-width: 1288px) {
+    //     left: -170px;
+    //     bottom: 30px;
+    //   }
+    //   @media (max-width: 1135px) {
+    //     left: -250px;
+    //     bottom: 30px;
+    //   }
+    //   @media (max-width: 1135px) {
+    //     left: -400px;
+    //   }
+    //   @media (max-width: 945px) {
+    //     left: -520px;
+    //   }
+
+    //   .skidkiImg {
+    //     width: auto;
+    //     height: auto;
+    //     @media (max-width: 785px) {
+    //       width: 290.58px;
+    //       height: 70px;
+    //     }
+    //   }
+    // }
+  }
+}
+
+.sm-banner {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  @media (max-width: 1044px) {
+    flex-direction: column;
+  }
+  img {
+    width: 500px;
+    height: 305px;
+    margin: 10px;
+    @media (max-width: 1044px) {
+      width: 80%;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 30px;
+    }
+    @media (max-width: 480px) {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+  .desctop {
+    @media (max-width: 480px) {
+      display: none;
+    }
+  }
+  .mobile {
+    display: none;
+    @media (max-width: 480px) {
+      display: flex;
+    }
+  }
+}

@@ -1,0 +1,566 @@
+.categories {
+  overflow-x: hidden;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  p:first-child {
+    margin-top: 80px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    text-align: center;
+    color: #333333;
+    height: 10px;
+    @media (max-width: 390px) {
+      font-size: 25px;
+      width: 100%;
+    }
+  }
+  p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    height: 10px;
+    text-align: center;
+    color: #333333;
+    @media (max-width: 408px) {
+      margin-bottom: 50px;
+    }
+    @media (max-width: 500px) {
+      margin-bottom: 50px;
+    }
+  }
+  .categories-section {
+    display: flex;
+    flex-direction: column;
+
+    .categories-block {
+      display: flex;
+      flex-direction: row;
+      @media (max-width: 482px) {
+        flex-direction: column;
+      }
+
+      .first-cat {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+
+        align-items: center;
+        justify-content: space-around;
+        @media (min-width: 815px) and (max-width: 987px) {
+          position: relative;
+          left: 50px;
+        }
+        div {
+          width: 280px;
+          height: 200px;
+          transition: 0.5s;
+          @media (max-width: 1198px) and (min-width: 987px) {
+            width: 227px;
+            height: 159px;
+          }
+
+          @media (max-width: 600px) {
+            width: 227px;
+            height: 159px;
+          }
+        }
+        a {
+          margin: 10px;
+          width: 280px;
+          overflow: hidden;
+          height: 200px;
+          text-decoration: none;
+          .f-c-1 {
+            background-image: url("../../assets/categor/sport.png");
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background 0.2s ease;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 46px;
+            transition: 1s;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            &:hover {
+              background-image: url("../../assets/categor/sport1.png");
+              padding: 10px;
+              transition: 1s;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 22px;
+              line-height: 46px;
+              text-align: center;
+
+              justify-content: flex-start;
+              text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+              span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 30px;
+                right: 10px;
+                text-align: center;
+                transition: 1s;
+                height: 39px;
+                width: 70%;
+                background: #1e1e1e;
+              }
+            }
+          }
+        }
+        a {
+          width: 280px;
+          overflow: hidden;
+          height: 200px;
+          text-decoration: none;
+          .f-c-2 {
+            background-image: url("../../assets/categor/shild.png");
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background 0.2s ease;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 46px;
+            transition: 1s;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            &:hover {
+              background-image: url("../../assets/categor/shild1.png");
+              padding: 10px;
+              transition: 1s;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 46px;
+              text-align: center;
+              justify-content: flex-start;
+              text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+              span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 30px;
+                right: 10px;
+                text-align: center;
+                transition: 1s;
+                height: 39px;
+                width: 70%;
+                background: #1e1e1e;
+              }
+            }
+          }
+        }
+        a {
+          width: 280px;
+          overflow: hidden;
+          height: 200px;
+          text-decoration: none;
+          .f-c-3 {
+            background-image: url("../../assets/categor/iphone.png");
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background 0.2s ease;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 46px;
+            transition: 1s;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            &:hover {
+              background-image: url("../../assets/categor/iphone1.png");
+              padding: 10px;
+              transition: 1s;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 46px;
+
+              justify-content: flex-start;
+              text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+              span {
+                display: flex;
+
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 30px;
+                right: 10px;
+                text-align: center;
+                transition: 1s;
+                height: 39px;
+                width: 70%;
+                background: #1e1e1e;
+              }
+            }
+          }
+        }
+        a {
+          width: 280px;
+          overflow: hidden;
+          height: 200px;
+          text-decoration: none;
+          .f-c-4 {
+            background-image: url("../../assets/categor/sumka1.png");
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background 0.2s ease;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 46px;
+            transition: 1s;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            &:hover {
+              background-image: url("../../assets/categor/sumka11.png");
+              padding: 10px;
+              transition: 1s;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 46px;
+              text-align: center;
+
+              justify-content: flex-start;
+              text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+              span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 30px;
+                right: 10px;
+                text-align: center;
+                transition: 1s;
+                height: 39px;
+                width: 70%;
+                background: #1e1e1e;
+              }
+            }
+          }
+        }
+      }
+      .second-cat {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-around;
+        @media (min-width: 815px) and (max-width: 987px) {
+          position: relative;
+          right: 50px;
+        }
+        div {
+          width: 280px;
+          height: 200px;
+          transition: 0.5s;
+          @media (max-width: 1198px) and (min-width: 987px) {
+            width: 227px;
+            height: 159px;
+          }
+          @media (max-width: 600px) {
+            width: 227px;
+            height: 159px;
+          }
+        }
+        a {
+          margin: 10px;
+          width: 280px;
+          overflow: hidden;
+          height: 200px;
+          text-decoration: none;
+
+          .s-c-1 {
+            width: 100%;
+            background-image: url("../../assets/categor/electric.png");
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background 0.2s ease;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 46px;
+            transition: 1s;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            @media (max-width: 1198px) and (min-width: 987px) {
+              width: 227px;
+              height: 159px;
+            }
+            @media (max-width: 600px) {
+              width: 227px;
+              height: 159px;
+            }
+            &:hover {
+              background-image: url("../../assets/categor/electric1.png");
+              padding: 10px;
+              transition: 1s;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 46px;
+              text-align: center;
+              justify-content: flex-end;
+              text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+              span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 30px;
+
+                text-align: center;
+                transition: 1s;
+                height: 39px;
+                width: 70%;
+                background: #1e1e1e;
+              }
+            }
+          }
+        }
+        a {
+          width: 280px;
+          overflow: hidden;
+          height: 200px;
+          text-decoration: none;
+          .s-c-2 {
+            background-image: url("../../assets/categor/acsses.png");
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background 0.2s ease;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 46px;
+            transition: 1s;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            &:hover {
+              background-image: url("../../assets/categor/acsses1.png");
+              padding: 10px;
+              transition: 1s;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 46px;
+              text-align: center;
+              text-align: center;
+              justify-content: flex-end;
+              text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+              span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 30px;
+
+                text-align: center;
+                transition: 1s;
+                height: 39px;
+                width: 70%;
+                background: #1e1e1e;
+              }
+            }
+          }
+        }
+        a {
+          width: 280px;
+          overflow: hidden;
+          height: 200px;
+          text-decoration: none;
+          .s-c-3 {
+            background-image: url("../../assets/categor/car.png");
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background 0.2s ease;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 46px;
+            transition: 1s;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            &:hover {
+              background-image: url("../../assets/categor/car1.png");
+              padding: 10px;
+              transition: 1s;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 46px;
+              text-align: center;
+              text-align: center;
+              justify-content: flex-end;
+              text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+              span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 30px;
+                text-align: center;
+                transition: 1s;
+                height: 39px;
+                width: 70%;
+                background: #1e1e1e;
+              }
+            }
+          }
+        }
+        a {
+          width: 280px;
+          overflow: hidden;
+          height: 200px;
+          text-decoration: none;
+
+          .s-c-4 {
+            background-image: url("../../assets/categor/podarok.png");
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-end;
+            background-repeat: no-repeat;
+            background-size: cover;
+            transition: background 0.2s ease;
+            font-family: Poppins;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 46px;
+            transition: 1s;
+            text-align: center;
+            color: #ffffff;
+            text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+            &:hover {
+              background-image: url("../../assets/categor/podarok1.png");
+              padding: 10px;
+              transition: 1s;
+              font-family: Poppins;
+              font-style: normal;
+              font-weight: bold;
+              font-size: 18px;
+              line-height: 46px;
+              text-align: center;
+              text-align: center;
+              justify-content: flex-end;
+              text-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+              span {
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                bottom: 30px;
+                text-align: center;
+                transition: 1s;
+                height: 39px;
+                width: 70%;
+                background: #1e1e1e;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@keyframes levitation {
+  0%,
+  100% {
+    background-image: url("../../assets/categor/shild.png");
+  }
+  50% {
+    background-image: url("../../assets/categor/shild1.png");
+  }
+}
+.categories .categories-section .categories-block .second-cat a {
+  @media (max-width: 1198px) and (min-width: 987px) {
+    width: 227px;
+    height: 159px;
+  }
+  @media (max-width: 600px) {
+    width: 227px;
+    height: 159px;
+  }
+}
+.categories .categories-section .categories-block .first-cat a {
+  @media (max-width: 1198px) and (min-width: 987px) {
+    width: 227px;
+    height: 159px;
+  }
+  @media (max-width: 600px) {
+    width: 227px;
+    height: 159px;
+  }
+}

@@ -2,21 +2,14 @@ import React from 'react';
 export const calculate = (x) => {
     let sum = 0
     x.map((item) => {
-        sum += item.price
+        sum += item.price * item.number
     })
     return (
-        <div>
-            <div>количество товаров: {x.length}</div>
-            <div>`сумма: {sum} руб.`</div>
+        <div className='price-block-fin'>
+
+            <div className='fin-sum'>{`    ${sum} руб.`}</div>
         </div>
 
     )
 }
 
-export const returnAnyBucket = () => {
-    return (
-        <div className='prod-landing-card'>
-            Кажется.. тут
-        </div>
-    )
-}

@@ -16,7 +16,6 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const MainSwiper = () => {
     return (
         <Swiper
-
             spaceBetween={50}
             slidesPerView={1}
             // autoplay={{
@@ -25,12 +24,10 @@ const MainSwiper = () => {
             // }}
             navigation
             pagination={{ clickable: true }}
-
-
         >
-            <div class="swiper-button-prev swiper-button-black"></div>
+            <div className="swiper-button-prev swiper-button-black"></div>
 
-            <div class="swiper-button-next swiper-button-black"></div>
+            <div className="swiper-button-next swiper-button-black"></div>
             <SwiperSlide>
                 <div className='swiper-first-slide first_Sl'>
                     <h1>ЗАГОЛОВОК</h1>

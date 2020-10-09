@@ -1,6 +1,6 @@
 const shopObj = [
     {
-        name: 'СВЕРХМОЩНЫЙ КОМПАКТНЫЙ МОНОКУЛЯР BUSHNELL ',
+        name: ' Компактный монокуляр BUSHNELL ',
         subDescr: '4 цвета на выбор',
         image: 'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/1.jpg?alt=media&token=1691c765-f8f5-48bf-bc2f-5f6ed226ae2f',
         description: `Принцип работы монокуляра заключается в особом напылении FullVision, которым оснащены стеклянные линзы устройства. Напыление мгновенно реагирует на уровень освещения и позволяет использовать монокуляр для обзора как в дневное, так и в ночное время. Сегодня эта научная разработка успешно применяется в военных подразделениях 15-ти стран мира, в том числе США, Германии и России.`,
@@ -10,6 +10,8 @@ const shopObj = [
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/5.jpg?alt=media&token=3363efd0-5c91-4bc0-94ce-9ab1a1aa6c92',
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/6.jpg?alt=media&token=e0bbbba4-2a15-483f-b16a-cf0ae2a5aec0'],
         price: 39,
+        count: 0,
+        categories: 'electric'
     },
     {
         name: 'Ночник "Звездное небо"',
@@ -26,6 +28,7 @@ const shopObj = [
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/night3.jpg?alt=media&token=ac54dbdc-a01d-40a7-9956-e654e46244b7',
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/night4.jpg?alt=media&token=b592c715-9f28-4ae9-8236-d4e732807983'],
         price: 29,
+        categories: 'gifts'
     },
     {
         name: 'Slim Shapewear',
@@ -41,6 +44,7 @@ const shopObj = [
             "https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/sl4.jpg?alt=media&token=fc0139ed-df96-4d7b-82ce-72391763c80d",
             "https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/sl5.gif?alt=media&token=170f2348-2b01-4b01-9c7c-d2c1999b6cda"],
         price: 25,
+        categories: 'life'
     },
     {
         name: 'Органайзер для одежды',
@@ -58,8 +62,8 @@ const shopObj = [
             "https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/org4.gif?alt=media&token=ba0aaefb-2edc-40ef-881a-384a2b5b7a24",
             "https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/org5.jpg?alt=media&token=9642b33b-7b55-4a15-b5f7-99fb8d2adafa",
             "https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/org6.gif?alt=media&token=29e5a8a5-97d5-415e-a786-14d7ab2f4386"],
-        price: "25 за пять штук",
-
+        price: 25,
+        categories: 'acses '
     },
     {
         name: 'ЖЕНСКАЯ СУМКА-КЛАТЧ',
@@ -74,6 +78,7 @@ const shopObj = [
             "https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/kl6.jpg?alt=media&token=da4b1a85-0553-4291-afe5-7ed3c048ca27"],
         price: 29,
         hrefLink: '/klatch',
+        categories: 'acses '
     },
     {
         name: 'ДЕТСКИЙ ИГРОВОЙ КОВРИК-АКВАРИУМ',
@@ -90,6 +95,7 @@ const shopObj = [
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/12.jpg?alt=media&token=25d06286-d56a-4329-88f2-c8b5993e8ce6'],
         price: 49,
         hrefLink: `/child-kover`,
+        categories: 'child'
     },
     {
         name: 'Набор ножей 6 в 1 для дома',
@@ -108,6 +114,7 @@ const shopObj = [
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/n6.jpg?alt=media&token=fda21b65-fc8b-418c-bcea-45811b5befe9'],
         price: 39,
         hrefLink: `/stack-knives`,
+        categories: 'home'
     },
     {
         name: 'POWERBANK 40000 MAH',
@@ -126,6 +133,7 @@ const shopObj = [
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/swiper8Img.png?alt=media&token=38ec7c97-ee85-4d8c-bb92-13ab2a0dd093'],
         price: 59,
         hrefLink: `/powerback-fourmah`,
+        categories: 'electric'
     },
     {
         name: 'Aroma Diffuser',
@@ -141,6 +149,7 @@ const shopObj = [
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/aroma6.jpg?alt=media&token=f3e3ace4-f7a5-4fe1-a34c-3d9739c03d3d'],
         price: 39,
         hrefLink: `/aroma-diffuser`,
+        categories: 'home'
     },
     {
         name: 'Бамбуковое одеяло',
@@ -160,6 +169,7 @@ const shopObj = [
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/bam6.jpg?alt=media&token=3fb2c53f-c7ae-4ff6-a6a3-4174ca18e0a8'],
         price: 39,
         hrefLink: `/bamboo`,
+        categories: 'home'
     },
     {
         name: 'SMАRT WATCH',
@@ -179,6 +189,7 @@ const shopObj = [
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/bam6.jpg?alt=media&token=3fb2c53f-c7ae-4ff6-a6a3-4174ca18e0a8'],
         price: 59,
         hrefLink: `/smart-watch`,
+        categories: 'electric'
     },
     {
         name: 'Женские сумки EveryDay ',
@@ -198,6 +209,7 @@ const shopObj = [
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/smart-watch2.jpg?alt=media&token=172a0d5f-7e99-49df-85cd-bdbc62ab1241'],
         price: 59,
         hrefLink: `/smart-watch`,
+        categories: 'acses'
     },
     {
         name: 'SMАRT WATCH',
@@ -217,6 +229,7 @@ const shopObj = [
             'https://firebasestorage.googleapis.com/v0/b/luukby.appspot.com/o/bam6.jpg?alt=media&token=3fb2c53f-c7ae-4ff6-a6a3-4174ca18e0a8'],
         price: 59,
         hrefLink: `/smart-watch`,
+        categories: 'electric'
     },
 ]
 

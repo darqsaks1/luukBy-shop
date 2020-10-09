@@ -1,5 +1,5 @@
 .swiper-first-slide {
-  width: 1348px;
+  width: 95%;
   height: 697px;
   background: #c4c4c4;
   margin: 0 auto;
@@ -7,6 +7,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 768px) {
+    width: 100%;
+  }
   h1 {
     font-style: normal;
     font-weight: normal;
@@ -14,6 +17,9 @@
     line-height: 22px;
 
     color: #111111;
+    @media (max-width: 480px) {
+      font-size: 50px;
+    }
   }
   p {
     font-family: Poppins;
@@ -22,7 +28,11 @@
     font-size: 15px;
     line-height: 20px;
     /* identical to box height, or 133% */
-
+    @media (max-width: 480px) {
+      width: 100%;
+      text-align: center;
+      height: auto;
+    }
     color: #888888;
   }
   div {
@@ -58,6 +68,13 @@
   background: #ffffff;
   box-shadow: 2px 2px 9px rgba(0, 0, 0, 0.12);
   border-radius: 0px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+  &:hover {
+    --swiper-navigation-color: white !important;
+    background: #111111;
+  }
 }
 
 .swiper-button-prev:after,
@@ -73,8 +90,45 @@
 }
 .swiper-button-prev {
   left: 25px !important;
+  @media (max-width: 768px) {
+    display: none !important;
+  }
 }
 
 .swiper-button-next {
   right: 25px !important;
+  @media (max-width: 768px) {
+    display: none !important;
+  }
+}
+.button-black {
+  --swiper-navigation-color: #000000;
+  &:hover {
+    --swiper-navigation-color: white !important;
+  }
+}
+.swiper-pagination-bullet-active {
+  background-color: #000;
+}
+.swiper-pagination ::v-deep {
+  .swiper-pagination-bullet {
+    opacity: 1;
+    border: white solid 1px;
+    background-color: transparent;
+  }
+  .swiper-pagination-bullet-active {
+    background-color: white !important;
+  }
+}
+
+.swiper-pagination-bullet {
+  width: 13px !important;
+  height: 13px !important;
+  border: 2px solid #ffffff;
+  box-sizing: border-box;
+  background: none !important;
+}
+.swiper-pagination-bullet-active {
+  opacity: 1;
+  background: white !important;
 }

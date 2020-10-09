@@ -13,7 +13,13 @@ export const setBucket = (actionType, data) => {
     };
     return action;
 };
-
+export const setItemBucket = (actionType, item) => {
+    const action = {
+        type: actionType,
+        payload: item,
+    };
+    return action;
+};
 export const deleteBucket = (actionType, data) => {
     const action = {
         type: actionType,

@@ -1,21 +1,28 @@
 @import "./components/header/header.scss";
 @import "./components/title/title.scss";
-@import "./components/categories/title-categories/title-categories.scss";
-@import "./components/categories/human-categories/human-categories.scss";
-@import "./components/categories/blocks-categories/block-categories.scss";
+@import "./components/hit-products/hit-products.scss";
 @import "./components/swiper/swiper.scss";
-@import "./components/products-sections/first-section/first-product-section.scss";
-@import "./components/commercial/first-commercial/first-commercial.scss";
+@import "./components/products/products.scss";
+@import "./components/banner/banner.scss";
 @import "./components/footer/footer.scss";
 @import "./assets/layots/layos.scss";
 @import "./components/about-shop/about-shop.scss";
 @import "./components/payment/payment.scss";
 @import "./components/bucket-page/bucket-page.scss";
 @import "./components/prod-lending/prod-lending.scss";
+@import "./components/categories/categories.scss";
+@import "./components/shop/shop.scss";
+@import "./components/prod-lending/out-recomend/recomend.scss";
+@import "./components/order/order.scss";
+@import "./components/politics/politics.scss";
+@import "./components/contacts/contacts.scss";
+@import "./components/delivery/delivery.scss";
 
 body {
   margin: 0 auto;
   max-width: 1440px;
+ 
+  overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -32,5 +39,5 @@ code {
 }
 
 html {
-  --swiper-theme-color: red;
+  --swiper-theme-color: white !important;
 }
