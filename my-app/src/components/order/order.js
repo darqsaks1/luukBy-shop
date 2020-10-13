@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import guard from '../../assets/guard.svg'
 import { NavLink, Link } from "react-router-dom";
-
+import php from '../../php/sendReviev.php'
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 const Order = () => {
@@ -16,20 +16,21 @@ const Order = () => {
                 Главная  / Корзина /ОФОРМИТЬ ЗАКАЗ
             </div>
             <div className='order-form'>
-                <form>
+                <form action={php} method="post">
                     <div className='contanct-information'>
                         <div>Контактная информация</div>
                         <p>Ваше имя*</p>
-                        <input placeholder='Иван' />
+                        <input placeholder='Иван' name='name' required="required" minlength="3" maxlength="255" />
                     </div>
                     <div className='contacts'>
                         <div>
                             <p>Email*</p>
-                            <input placeholder='Ваш email' />
+                            <input placeholder='Ваш email' name="email" />
                         </div>
                         <div>
                             <p>Телефон*</p>
-                            <input placeholder='+375XXXXXXXXX' />
+                            <input placeholder='+375XXXXXXXXX' minlength="7" maxlength="13" id="lv-formLanding1-phone"
+                                name='phone' type="text" maxlength="25" />
                         </div>
                     </div>
                     <div className='delivery'>
@@ -54,10 +55,12 @@ const Order = () => {
                                 </div>
                             </div>
                         </div>
+                        <input type='hidden' name='delivery' value={state} />
+                        <input type='hidden' name='order' value={bucketState} />
                     </div>
                     <div class='adress'>
                         <p>Адрес доставки*</p>
-                        <input placeholder='Город, улица, дом, офис (подъезд)' />
+                        <input placeholder='Город, улица, дом, офис (подъезд)' name='adress' />
                     </div>
                     <div class='payment'>
                         <p>Способ доставки</p>
@@ -75,12 +78,13 @@ const Order = () => {
                         <p>Комментарий к заказу</p>
                         <textarea
                             placeholder='Сообщите нам любую дополнительную информацию '
+                            name='comment'
                         />
 
                     </div>
                     <div className='button-submit'>
 
-                        <button>Отправить заказ</button>
+                        <button type="submit" name="Submit"  >Отправить заказ</button>
                         <div>
 
                             <img src={guard} alt='guard' />

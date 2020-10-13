@@ -1,9 +1,9 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Link } from "react-router-dom";
 import SwiperCore, { Navigation, Pagination, Scrollbar, A11y, Autoplay } from 'swiper';
-import shopObj from '../../data/luukby/shop-obj';
+import hitsObj from '../../data/luukby/hitsObj';
 import { setHref, setBucket } from '../../actions/actions-creator'
 import { SET_PRODUCT_PAGE, SET_BUCKET } from '../../actions/actions-types'
 import discountIcon from '../../assets/discountIcon.svg'
@@ -13,13 +13,13 @@ SwiperCore.use([Navigation, Pagination, Scrollbar, A11y, Autoplay]);
 const HitProducts = () => {
     const productHref = useSelector(state => state.shop.productHref);
     const bucket = useSelector(state => state.shop.bucket);
-
+    const [productCount, setProductCount] = useState(1)
     const dispatch = useDispatch();
     const renderHitsProdCard = () => {
-        return shopObj.map((item => {
+        return hitsObj.map((item => {
             return (
                 <SwiperSlide>
-                    <div key={Math.random(shopObj.length)}
+                    <div key={Math.random(hitsObj.length)}
                         className='product-card-link'
                         onClick={() => { dispatch(setHref(SET_PRODUCT_PAGE, item.hrefLink)) }}
                     >
@@ -33,7 +33,7 @@ const HitProducts = () => {
                                             name: item.name,
                                             price: item.price,
                                             image: item.image,
-                                            number: 1
+                                            number: productCount,
                                         }))} >
                             </div>
                         </div>
@@ -50,7 +50,7 @@ const HitProducts = () => {
         }))
     }
     return (
-        <div className="hits-categories">
+        <div className="hits-categories" id='hits'>
             <h2> Акции</h2>
             <div className='human-categories-list'>
                 <Swiper

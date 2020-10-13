@@ -23,14 +23,13 @@ const shopReducer = (state = initialState, action) => {
                 bucketState: action.payload
             };
         case SET_BUCKET:
-            console.log(action.payload)
-            console.log(state.bucketState)
+             
             return {
                 ...state,
                 bucketState: [...state.bucketState.filter(item => item.name !== action.payload.name), action.payload]
             };
         case SET_NUMBER_PLUS:
-            console.log(action.payload)
+             
             return {
                 ...state,
                 bucketState: [...state.bucketState.map(item => {
@@ -44,27 +43,35 @@ const shopReducer = (state = initialState, action) => {
                 })]
             };
         case SET_NUMBER_MINUS:
-            console.log(action.payload)
+           
             return {
                 ...state,
                 bucketState: [...state.bucketState.map(item => {
-                    if (item.name === action.payload.name && item.number > 0) {
-                        return {
-                            ...item, number: item.number - 1
+                    if (item.name === action.payload.name) {
+                        if (item.number > 0) {
+                            return {
+                                ...item, number: item.number - 1
+                            }
                         }
-                    } if (item.name === action.payload.name && item.number === 0) {
-                        return {
-                            ...item, number: item.number * 0
+                        if (item.number === 0) {
+                            return {
+                                ...item, number: item.number * 0
+                            }
                         }
+                    }
+                    else {
+                        return item;
                     }
                 })]
             };
+
         case DELETE_BUCKET:
             return {
                 ...state,
                 bucketState: state.bucketState.slice(0, -1)
             };
         case SET_PRODUCT_PAGE:
+             
             return {
                 ...state,
                 productHref: action.payload,

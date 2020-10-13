@@ -7,7 +7,7 @@
 @import "./components/footer/footer.scss";
 @import "./assets/layots/layos.scss";
 @import "./components/about-shop/about-shop.scss";
-@import "./components/payment/payment.scss";
+
 @import "./components/bucket-page/bucket-page.scss";
 @import "./components/prod-lending/prod-lending.scss";
 @import "./components/categories/categories.scss";
@@ -21,7 +21,7 @@
 body {
   margin: 0 auto;
   max-width: 1440px;
- 
+
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -40,4 +40,6 @@ code {
 
 html {
   --swiper-theme-color: white !important;
+  scroll-behavior: smooth;
 }
+

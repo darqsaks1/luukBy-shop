@@ -10,14 +10,17 @@ const BucketPage = () => {
     const bucketState = useSelector(state => state.shop.bucketState);
     const dispatch = useDispatch();
     const renderBucketProducts = () => {
+       
         return bucketState.map((item) => {
             return (
                 <div className='bucket-card'>
                     <div className='main-image'>
                         <div style={{ backgroundImage: `url(${item.image}` }} />
                     </div>
+
                     <div className='bucket-name'> {item.name}</div>
                     <div className='bucket-price'> {item.price} руб</div>
+
                     <div className='counter'>
                         <div className='minus' onClick={() => dispatch(setItemBucket(SET_NUMBER_MINUS, item))}></div>
                         <div className='number'> {item.number} </div>

@@ -7,6 +7,7 @@ import phoneImg from '../../assets/header-logo/footerPhone1.png'
 import mailImg from '../../assets/header-logo/fuuter.mail1.png'
 import timeImg from '../../assets/header-logo/erip1.png'
 import moneyImg from '../../assets/header-logo/money1.png'
+import php from '../../php/sendReviev.php'
 const Contacts = () => {
     return (
         <div className='contacts-container'>
@@ -19,7 +20,7 @@ const Contacts = () => {
                     <span> нам важен каждый клиент</span></div>
                 <div className='contacts-block'>
                     <div className='links-block'>
-                        <img src={arrowFootr} alt='arrowFooter'  className ='luukArrow'/>
+                        <img src={arrowFootr} alt='arrowFooter' className='luukArrow' />
                         <div className='list'>
                             <div className='contact '>
                                 <img src={geolocImg} alt='icon-footer' />
@@ -44,32 +45,38 @@ const Contacts = () => {
                         </div>
                     </div>
                     <div className='inputs-container'>
-                        <div className='inputs-block'>
-                            <div>
-                                <p>Имя*</p>
-                                <input placeholder='Ваше имя' />
+                        <form action={php} method="post">
+
+
+                            <div className='inputs-block'>
+                                <div>
+                                    <p>Имя*</p>
+                                    <input placeholder='Иван' name='name' required="required" minlength="3" maxlength="255" />
+                                </div>
+                                <div>
+                                    <p>Email</p>
+                                    <input placeholder='Ваш email' name="email" />
+                                </div>
                             </div>
-                            <div>
-                                <p>Email</p>
-                                <input placeholder='Ваш email' />
+                            <div className='text-area'>
+                                <p>Комментарий к заказу</p>
+                                <textarea
+                                    name='comment'
+                                    placeholder='Сообщите нам любую дополнительную информацию '
+                                />
+
                             </div>
-                        </div>
-                        <div className='text-area'>
-                            <p>Комментарий к заказу</p>
-                            <textarea
-                                placeholder='Сообщите нам любую дополнительную информацию '
-                            />
+                            <div className='button-submit'>
 
-                        </div>
-                        <div className='button-submit'>
+                                < button type="submit" name="Submit" >Отправить заказ</button>
+                                <div>
 
-                            <button>Отправить заказ</button>
-                            <div>
-
-                                <img src={guard} alt='guard' />
+                                    <img src={guard} alt='guard' />
                             Даю согласие на обработку персональных данных
                         </div>
-                        </div>
+                            </div>
+                        </form>
+
                     </div>
                 </div>
             </div>

@@ -18,6 +18,10 @@
     color: #ffffff;
     margin-bottom: 70px;
     background-repeat: no-repeat;
+    @media (max-width: 633px) {
+      background-attachment: scroll;
+      height: 130px;
+    }
   }
   .bucket-order {
     display: flex;
@@ -25,6 +29,9 @@
     align-items: center;
     width: 80%;
     margin: 0 auto;
+    @media (max-width: 1023px) {
+      width: 100%;
+    }
     .titles-of-products {
       display: flex;
       flex-direction: row;
@@ -32,6 +39,9 @@
       justify-content: space-around;
       padding-bottom: 10px;
       border-bottom: 1px solid #e1e1e1;
+      @media (max-width: 483px) {
+        display: none;
+      }
       .name-title {
         margin-left: 140px;
         font-style: normal;
@@ -39,6 +49,13 @@
         font-size: 16px;
         line-height: 20px;
         color: #333333;
+        @media (max-width: 1023px) {
+          position: relative;
+          right: 20px;
+        }
+        @media (max-width: 763px) {
+          margin-left: 0;
+        }
       }
       .price-title {
         font-style: normal;
@@ -46,6 +63,13 @@
         font-size: 16px;
         line-height: 20px;
         color: #333333;
+        @media (max-width: 1023px) {
+          position: relative;
+          right: 20px;
+        }
+        @media (max-width: 763px) {
+          display: none;
+        }
       }
       .count-title {
         font-style: normal;
@@ -55,17 +79,29 @@
         color: #333333;
       }
       .finnaly-title {
+        position: relative;
+        right: 20px;
         font-style: normal;
         font-weight: 600;
         font-size: 16px;
         line-height: 20px;
         color: #333333;
+        @media (max-width: 1023px) {
+          right: 40px;
+        }
+        @media (max-width: 763px) {
+          right: 0px;
+        }
       }
     }
     .products {
       display: flex;
       flex-direction: column;
       width: 100%;
+      @media (max-width: 483px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
       .bucket-card {
         margin: 0 auto;
         width: 100%;
@@ -77,6 +113,16 @@
         align-items: center;
 
         border-bottom: 1px solid #e1e1e1;
+        @media (max-width: 763px) {
+          flex-wrap: wrap;
+          height: auto;
+        }
+        @media (max-width: 1023px) {
+          padding: 0px;
+        }
+        @media (max-width: 483px) {
+          flex-direction: column;
+        }
         .main-image {
           width: 109.2px;
           display: flex;
@@ -85,23 +131,47 @@
 
           filter: drop-shadow(2px 4px 7px rgba(0, 0, 0, 0.25));
           height: 109.2px;
+          @media (max-width: 483px) {
+            width: 269.2px;
+            height: 269.2px;
+          }
           div {
             width: 100px;
             height: 100px;
             background-size: cover;
+            @media (max-width: 483px) {
+              width: 260.2px;
+              height: 260.2px;
+            }
           }
         }
         .bucket-name {
           position: relative;
           right: 33px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
           width: 200px;
+          text-align: center;
           height: 40px;
           font-style: normal;
           font-weight: 500;
           font-size: 14px;
           line-height: 20px;
           color: #333333;
+          @media (max-width: 763px) {
+            right: 0px;
+            width: 100px;
+            height: auto;
+          }
+          @media (max-width: 483px) {
+            width: 100%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            font-size: 18px;
+          }
         }
+
         .bucket-price {
           position: relative;
           right: 10px;
@@ -110,8 +180,10 @@
           font-weight: normal;
           font-size: 15px;
           line-height: 20px;
-
           color: #333333;
+          @media (max-width: 763px) {
+            display: none;
+          }
         }
         .counter {
           position: relative;
@@ -121,6 +193,9 @@
           justify-content: space-between;
           align-items: center;
           height: 45px;
+          @media (max-width: 763px) {
+            left: 0;
+          }
           .minus {
             width: 18px;
             margin-left: 10px;
@@ -130,6 +205,9 @@
             background-size: cover;
             background-repeat: no-repeat;
             cursor: pointer;
+            @media (max-width: 483px) {
+              margin-left: 0px;
+            }
           }
           .plus {
             width: 20px;
@@ -162,15 +240,42 @@
         .full-price-block {
           width: 100px;
           height: 50px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @media (max-width: 763px) {
+            width: 100px;
+            height: 50px;
+          }
+          @media (max-width: 483px) {
+            width: 100%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+          }
           .full-price {
+            display: flex;
+            justify-content: center;
+            align-items: center;
             position: relative;
-            left:70px;
-            top:10px;
+            left: 0px;
+            top: 0px;
             font-style: normal;
             font-weight: 600;
             font-size: 18px;
             line-height: 20px;
             color: #333333;
+
+            @media (max-width: 1000px) {
+              left: 0px;
+              top: 0px;
+            }
+            @media (max-width: 483px) {
+              width: 100%;
+              font-size: 20px;
+              &:before {
+                content: "Цена:   \00a0  ";
+              }
+            }
           }
         }
         .delete-card {
@@ -180,6 +285,15 @@
           background-repeat: no-repeat;
           background-size: contain;
           cursor: pointer;
+          @media (max-width: 1023px) {
+            margin-right: 10px;
+          }
+          @media (max-width: 483px) {
+            margin-right: 0px;
+            width: 20px;
+            height: 20px;
+            margin-bottom: 10px;
+          }
         }
       }
     }
@@ -187,6 +301,9 @@
   .od {
     width: 100%;
     height: 210px;
+    @media (max-width: 416px) {
+      height: auto;
+    }
     .order {
       position: relative;
       left: 10px;
@@ -201,13 +318,25 @@
 
       align-items: center;
       flex-direction: row-reverse;
-
+      @media (max-width: 1023px) {
+        width: 100%;
+        margin-left: 0px;
+        padding: 0px;
+        left: 0px;
+      }
+      @media (max-width: 416px) {
+        flex-direction: column;
+        height: auto;
+      }
       .button-ordered {
         align-self: center;
         justify-self: center;
         display: flex;
         justify-content: space-between;
         flex-direction: column;
+        @media (max-width: 647px) {
+          align-items: center;
+        }
         .finnaly-order {
           justify-content: center;
           display: flex;
@@ -223,6 +352,9 @@
             line-height: 20px;
             vertical-align: bottom;
             padding: 10px;
+            @media (max-width: 645px) {
+              left: 40px;
+            }
           }
           .price-block-fin {
             position: relative;
@@ -232,6 +364,10 @@
             display: flex;
             align-self: bottom;
             justify-content: flex-start;
+            @media (max-width: 645px) {
+              width: 200px;
+              justify-content: center;
+            }
             .fin-sum {
               font-style: normal;
               font-weight: 500;
@@ -281,6 +417,19 @@
         background-image: url("../../assets/arrov-order.png");
         background-size: contain;
         background-repeat: no-repeat;
+        @media (max-width: 1023px) {
+          right: 100px;
+        }
+        @media (max-width: 808px) {
+          left: 10px;
+        }
+        @media (max-width: 416px) {
+          background-image: url("../../assets/arrov-order1.png");
+          right: 0px;
+          margin-top: 30px;
+          top: 0px;
+          margin-bottom: 30px;
+        }
       }
     }
   }
@@ -296,18 +445,34 @@
   justify-content: flex-start;
   text-align: center;
   flex-direction: row;
+  @media (max-width: 770px) {
+    flex-direction: column;
+  }
+  @media (max-width: 487px) {
+    width: 100%;
+  }
   .waste-text {
     height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: flex-start;
+    @media (max-width: 770px) {
+      height: auto;
+    }
+    @media (max-width: 422px) {
+      align-items: center;
+    }
     .waste-h {
       font-style: normal;
       font-weight: 600;
       font-size: 20px;
       line-height: 17px;
       text-transform: uppercase;
+      @media (max-width: 422px) {
+        line-height: 25px;
+        font-size: 15px;
+      }
       p {
         color: #f83600;
       }
@@ -343,6 +508,11 @@
   }
   .waste-img {
     margin-left: 100px;
+    @media (max-width: 420px) {
+      margin-left: 0;
+      position: relative;
+      top: 40px;
+    }
   }
 }
 

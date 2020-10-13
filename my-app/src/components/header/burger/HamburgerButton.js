@@ -15,21 +15,19 @@ const MenuButton = styled.button`
   span {
     transition: all 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
-  :focus {
-    border: medium none rgb(111, 255, 176);
-    box-shadow: rgb(111, 255, 176) 0 0 2px 2px;
-    outline: 0;
-  }
-  :hover {
+   
+ 
     span:nth-of-type(1) {
-      width: 33px;
+      width: 34px;
+      border-radius: 20px;
     }
     span:nth-of-type(2) {
-      width: 40px;
+      width: 60px;
+      border-radius: 20px;
     }
     span:nth-of-type(3) {
-      width: 30px;
-    }
+      width: 0px;
+     
   }
   &.active {
     span:nth-of-type(1) {
@@ -42,7 +40,7 @@ const MenuButton = styled.button`
     }
     span:nth-of-type(3) {
       transform: rotate(-45deg) translate(7px, -7px);
-      width: 40px;
+      width: 60px;
     }
   }
 `;

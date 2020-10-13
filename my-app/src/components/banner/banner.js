@@ -18,7 +18,7 @@ const Banner = () => {
             <div className="banner">
                 <div className='bg' >
                     <div>
-                        <ScrollAnimation animateIn='bounceInLeft' className='action' delay={400}>
+                        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'  className='action' delay={400}>
                             <img src={smileLuuk} alt='smile-luuk' className='smile' />
                         </ScrollAnimation>
                     </div>

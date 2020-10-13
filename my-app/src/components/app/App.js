@@ -11,7 +11,7 @@ import Products from '../products/products'
 import Footer from '../footer/footer'
 import './App.scss';
 import AboutShop from '../about-shop/about-shop'
-import Payment from '../payment/payment';
+import ScrollToTop from '../scroll/scroll'
 import BucketPage from '../bucket-page/bucket-page';
 import ProdLanding from '../prod-lending/prod-lending';
 import Shop from '../shop/shop'
@@ -28,44 +28,44 @@ const App = () => {
       <Title />
 
       <Switch>
-        <Route exact path="/">
-          <MainSwiper />
-          <HitProducts />
-          <Categories />
-          <Banner />
-          <Products />
-        </Route>
-        <Route exact path='/about'>
-          <AboutShop />
-        </Route>
-        <Route exact path='/shop'>
-          <Shop />
-        </Route>
-        <Route exact path='/bucket'>
-          <BucketPage />
-        </Route>
-        <Route exact path='/payment'>
-          <Payment />
-        </Route>
-        <Route exact path='/delivery'>
-          <Delivery />
-        </Route>
-        <Route exact path='/productLanding'>
-          < ProdLanding />
-        </Route>
-        <Route exact path='/order'>
-          < Order />
-        </Route>
-        <Route exact path='/politics'>
-          < Politics />
-        </Route>
-        <Route exact path='/contacts'>
-          < Сontacts />
-        </Route>
+        <ScrollToTop>
+          <Route exact path="/">
+            <MainSwiper />
+            <HitProducts />
+            <Categories />
+            <Banner />
+            <Products />
+          </Route>
+          <Route exact path='/about'>
+            <AboutShop />
+          </Route>
+          <Route exact path='/shop'>
+            <Shop />
+          </Route>
+          <Route exact path='/bucket'>
+            <BucketPage />
+          </Route>
+
+          <Route exact path='/delivery'>
+            <Delivery />
+          </Route>
+          <Route exact path='/productLanding'>
+            < ProdLanding />
+          </Route>
+          <Route exact path='/order'>
+            < Order />
+          </Route>
+          <Route exact path='/politics'>
+            < Politics />
+          </Route>
+          <Route exact path='/contacts'>
+            < Сontacts />
+          </Route>
+        </ScrollToTop>
       </Switch>
-      <div class='test'>
-        <Footer />
-      </div>
+      <Footer />
+      {/* <div class='test'>
+      </div> */}
 
 
     </div>

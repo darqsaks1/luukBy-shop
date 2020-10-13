@@ -22,14 +22,14 @@ const Header = () => {
                     </Link>
                     </div>
                     <div>
-                        <Link to='./'>
+                        <Link to='./shop'>
                             Скидки
                     </Link>
                     </div>
                     <div>
-                        <Link to='/about'>
+                        <a href='#hits'>
                             Акции
-                    </Link>
+                    </a>
                     </div>
                     <div>
                         <Link to='/delivery'>
@@ -40,7 +40,7 @@ const Header = () => {
                 <div className='links-page'>
                     <a href="tel:+375(29)111-11-11" className='phone-link'>
                         <img src={phoneImg} alt='phone' />
-                        <p>+375(29)111-11-11</p>
+                        <p>+375(29)885-38-16</p>
                     </ a>
                     <a href="https://www.instagram.com/luuk.by/">
                         <img src={instagramImg} alt='phone' />

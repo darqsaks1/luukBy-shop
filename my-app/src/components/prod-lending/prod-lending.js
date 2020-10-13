@@ -6,6 +6,7 @@ import { setBucket } from '../../actions/actions-creator'
 import starSvg from '../../assets/star.svg'
 import Recomend from './out-recomend/recomend'
 const ProdLanding = () => {
+
     const productHref = useSelector(state => state.shop.productHref);
     const bucket = useSelector(state => state.shop.bucket);
     const [galImage, setGalImage] = useState(0)
@@ -30,6 +31,7 @@ const ProdLanding = () => {
         return productCount <= 0 ? setProductCount(0) : setProductCount(productCount - 1)
     }
     const renderProductByHref = () => {
+
         for (let i = 0; i < shopObj.length; i++) {
             if (shopObj[i].hrefLink === productHref) {
                 return (
@@ -92,6 +94,9 @@ const ProdLanding = () => {
                         </div>
                     </div>
                 )
+            }
+            else {
+                return <div>suka</div>
             }
         }
 

@@ -1,7 +1,7 @@
 import React from 'react';
 import imgFooter from '../../assets/header-logo/footer.png'
 import instagramImg from '../../assets/header-logo/footerInstagram.png'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import geolocImg from '../../assets/header-logo/location.png'
 import phoneImg from '../../assets/header-logo/footerPhone.png'
 import mailImg from '../../assets/header-logo/fuuter.mail.png'
@@ -12,7 +12,9 @@ const Footer = () => {
         <div className="footer">
             <div className='footer-section'>
                 <div className='logo-sec'>
-                    <img src={imgFooter} alt='footer' />
+               
+                        <img src={imgFooter} alt='footer' />
+           
                     <p>LUUK.BY - интернет магазин товаров будущего </p>
                     <a href="https://www.instagram.com/luuk.by/">
                         <img src={instagramImg} alt='phone' />
@@ -20,27 +22,27 @@ const Footer = () => {
                 </div>
                 <div className='section'>
                     <h3>Наш сервиc  </h3>
-                    <Link to='/about'>
+                    <NavLink to='./contacts'  >
                         Контакты
-                </Link>
-                    <Link to='/about'>
+                </NavLink>
+                    <NavLink to='./shop' activeClassName="active-footer">
                         Магазин
-                </Link>
-                    <Link to='/about'>
+                </NavLink>
+                    <NavLink to='./bucket' activeClassName="active-footer">
                         Посмотреть заказ
-                </Link>
+                </NavLink>
                 </div>
                 <div className='section'>
                     <h3> Информация  </h3>
-                    <Link to='/about'>
+                    <NavLink to='./about' activeClassName="active-footer">
                         О нас
-                     </Link>
-                    <Link to='/about'>
+                     </NavLink>
+                    <NavLink to='./contacts' activeClassName="active-footer">
                         Связаться с нами
-                        </Link>
-                    <Link to='/about'>
+                        </NavLink>
+                    <NavLink to='./delivery' activeClassName="active-footer">
                         Доставка
-                         </Link>
+                         </NavLink>
                 </div>
                 <div className=' section links'>
                     <h3>Контакты</h3>
@@ -51,7 +53,7 @@ const Footer = () => {
                         </div>
                         <div className='contact '>
                             <img src={phoneImg} alt='icon-footer' />
-                            +375 29 885 38 16
+                            +375(29)885-38-16
                         </div>
                         <div className='contact '>
                             <img src={mailImg} alt='icon-footer' />
@@ -59,7 +61,7 @@ const Footer = () => {
                         </div>
                         <div className='contact '>
                             <img src={timeImg} alt='icon-footer' />
-                            admin@luuk.by
+                           24/7
                         </div>
                         <div className='contact '>
                             <img src={moneyImg} alt='icon-footer' />
@@ -71,9 +73,9 @@ const Footer = () => {
                 <div> УНП 591249812</div>
                 <div className='law'>
                     ВСЕ ПРАВА ЗАЩИЩЕНЫ © 2020: LUUK.BY {'\n'}
-                    <Link to='./politics'>
+                    <NavLink to='./politics'>
                         ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ
-                    </Link>
+                    </NavLink   >
                     {'\n'}
                     ИП Барановский Эдуард Юрьевич, г.Гродно, ул. Комарова, д. 12, комн. 413 </div>
                 <div> Дата включений в торговый реестр: 28.08.2020`</div>

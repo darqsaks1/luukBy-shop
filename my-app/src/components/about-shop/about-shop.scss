@@ -17,6 +17,10 @@
     text-transform: uppercase;
     color: #ffffff;
     background-repeat: no-repeat;
+    @media (max-width: 833px) {
+      background-attachment: scroll;
+      height: 130px;
+    }
   }
   .about-container {
     width: 90%;
@@ -25,6 +29,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    @media (max-width: 1259px) {
+      width: 100%;
+    }
     h3 {
       width: 223px;
       height: 46px;
@@ -45,6 +52,18 @@
       flex-direction: row;
       align-items: center;
       justify-content: space-around;
+      @media (max-width: 917px) {
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+      }
+      img {
+        z-index: 5;
+        @media (max-width:480px) {
+          width: 300px;
+          height: auto;
+        }
+      }
       .text {
         position: relative;
         right: 100px;
@@ -52,11 +71,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
-        width: 627px;
+        width: 90%;
         height: auto;
 
         border: 2px solid #dadada;
         box-sizing: border-box;
+        @media (max-width: 1259px) {
+          width: 90%;
+        }
+        @media (max-width: 917px) {
+          right: 0;
+        }
         p {
           width: 70%;
           text-align: left;
@@ -70,6 +95,7 @@
           color: #888888;
         }
         img {
+          z-index: 10;
           align-self: flex-end;
         }
       }
@@ -82,6 +108,10 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      @media (max-width: 1259px) {
+        width: 100%;
+        justify-content: space-around;
+      }
       h3 {
         font-family: Poppins;
         font-style: normal;
@@ -110,28 +140,39 @@
         justify-content: space-between;
         align-items: center;
         margin-bottom: 100px;
+        @media (max-width: 926px) {
+          width: 100%;
+          flex-direction: column;
+        }
         .cards-block {
           background: #ffffff;
           box-shadow: 4px 7px 30px rgba(0, 0, 0, 0.1);
           border-radius: 0px;
-          width: 360px;
+          width: 300px;
 
-          height: 500px;
+          height: 550px;
+          @media (max-width: 926px) {
+            margin-top: 20px;
+          }
           img {
-            width: 100%;
-            height: auto;
+            width: 300px;
+            height: 160px;
           }
           .title {
             font-family: Poppins;
             font-style: normal;
-            font-weight: normal;
-            font-size: 18px;
+            font-weight: bold;
+            font-size: 24px;
             line-height: 25px;
             padding: 20px;
             text-align: left;
             color: #333333;
           }
           .text {
+            align-items: center;
+            width: 90%;
+            margin: 0 auto;
+            text-align: center;
             font-family: Poppins;
             font-style: normal;
             font-weight: normal;

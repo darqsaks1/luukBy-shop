@@ -11,7 +11,11 @@ const Title = () => {
     return (
         <div className="title-container">
             <div className="image-logo">
-                <img src={logoLuukBy} alt='logo' />
+                <NavLink to='./' className='a-text'
+                >
+
+                    <img src={logoLuukBy} alt='logo' />
+                </NavLink>
             </div>
             <div className="title-list">
                 <div>

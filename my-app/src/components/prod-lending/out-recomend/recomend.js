@@ -60,6 +60,33 @@ const Recomend = () => {
                     spaceBetween={40}
                     slidesPerView={4}
                     navigation
+                    breakpoints={{
+                        1440: {
+
+                            slidesPerView: 4,
+                        },
+                        1300: {
+
+                            slidesPerView: 4,
+                        },
+                        1201: {
+
+                            slidesPerView: 4,
+                        },
+                        950: {
+
+                            slidesPerView: 3,
+
+                        },
+                        609: {
+
+                            slidesPerView: 2,
+                        },
+                        320: {
+
+                            slidesPerView: 1,
+                        },
+                    }}
                 >
                     <div className="swiper-button-prev swiper-button-black"></div>
 
