@@ -95,9 +95,7 @@ const ProdLanding = () => {
                     </div>
                 )
             }
-            else {
-                return <div>suka</div>
-            }
+
         }
 
     }

@@ -79,11 +79,11 @@ const MainSwiper = () => {
                 </div>
                 <div className='swiper-first-slide first_S2-2'>
                     <Link to='./productLanding' className='big-link' onClick={() => { dispatch(setHref(SET_PRODUCT_PAGE, '/mujskoi-klatch')) }}>
-                        <img src={SwiperImgOne1440px} className='swiper1-1440px' />
-                        <img src={SwiperImgOne1024px} className='swiper1-1024px' />
-                        <img src={SwiperImgOne768px} className='swiper1-768px' />
-                        <img src={SwiperImgOne480px} className='swiper1-480px' />
-                        <img src={SwiperImgOne390px} className='swiper1-390px' />
+                        <img src={Swiper2_1} className='swiper1-1440px' />
+                        <img src={Swiper2_2} className='swiper1-1024px' />
+                        <img src={Swiper2_3} className='swiper1-768px' />
+                        <img src={Swiper2_4} className='swiper1-480px' />
+                        <img src={Swiper2_5} className='swiper1-390px' />
 
                     </Link>
                 </div>
@@ -101,11 +101,11 @@ const MainSwiper = () => {
                 </div>
                 <div className='swiper-first-slide first_S3-3'>
                     <Link to='./productLanding' className='big-link' onClick={() => { dispatch(setHref(SET_PRODUCT_PAGE, 'steclo')) }}>
-                        <img src={SwiperImgOne1440px} className='swiper1-1440px' />
-                        <img src={SwiperImgOne1024px} className='swiper1-1024px' />
-                        <img src={SwiperImgOne768px} className='swiper1-768px' />
-                        <img src={SwiperImgOne480px} className='swiper1-480px' />
-                        <img src={SwiperImgOne390px} className='swiper1-390px' />
+                        <img src={Swiper3_1} className='swiper1-1440px' />
+                        <img src={Swiper3_2} className='swiper1-1024px' />
+                        <img src={Swiper3_3} className='swiper1-768px' />
+                        <img src={Swiper3_4} className='swiper1-480px' />
+                        <img src={Swiper3_5} className='swiper1-390px' />
 
                     </Link>
                 </div>

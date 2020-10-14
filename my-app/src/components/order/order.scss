@@ -370,6 +370,14 @@
           border: 1px solid #d7d7d7;
           box-sizing: border-box;
           resize: none;
+          &:hover {
+            background: #ffffff;
+            border: 1px solid #3c3c3b;
+           
+       
+            
+            color: #111111;
+          }
         }
       }
       .button-submit {
@@ -400,6 +408,8 @@
           outline: none;
           text-align: center;
           color: #ffffff;
+          cursor: pointer;
+          user-select: none;
           @media (max-width: 442px) {
             margin-bottom: 10px;
           }
@@ -434,4 +444,10 @@
   height: 14.47px;
   border-radius: 50%;
   background: linear-gradient(90deg, #fe8c00 0%, #f83600 100%);
+}
+input {
+  padding: 0 10px;
+}
+textarea {
+  padding: 10px 10px;
 }

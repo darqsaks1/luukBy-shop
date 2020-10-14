@@ -159,10 +159,12 @@
           @media (max-width: 754px) {
             width: 170px;
             font-size: 14px;
-            justify-content: space-around;
+            justify-content: space-between;
+            flex-direction: row-reverse;
           }
           @media (max-width: 400px) {
             width: 160px;
+            font-size:12px;
             &:first-child {
               display: none;
             }

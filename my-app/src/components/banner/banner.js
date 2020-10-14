@@ -14,29 +14,19 @@ import smileLuuk from '../../assets/smile-luuk.svg'
 const Banner = () => {
     return (
         <div>
-            {/* <Animated animationIn="bounceInUp" animationOut="fadeOut" animationInDuration='2000' animationInDelay='1000' isVisible={true}> */}
+
             <div className="banner">
                 <div className='bg' >
                     <div>
-                        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut'  className='action' delay={400}>
+                        <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut' className='action' delay={400}>
                             <img src={smileLuuk} alt='smile-luuk' className='smile' />
                         </ScrollAnimation>
                     </div>
-                    {/* <ScrollAnimation animateIn='bounce' className='action' delay={400}>
-                        <img src={actionsImg} alt='smile-luuk' className='actions' />
-                    </ScrollAnimation>
-                    <img src={childImg} alt='smile-luuk' className='child' />
-                    <ScrollAnimation animateIn='bounce' className='bounc' delay={400}>
-                        <img src={seventeen} alt='smile-luuk' className='seventeen' />
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn='bounce' className='skidki' delay={400}>
-                        <img src={skidkiImg} alt='smile-luuk' className='skidkiImg' />
-                    </ScrollAnimation>
-                    <img src={fiveteen} alt='smile-luuk' className='fiveteen' /> */}
+
                 </div>
             </div>
             <SmallBanner />
-            {/* </Animated> */}
+
         </div >
     );
 }

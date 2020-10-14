@@ -76,6 +76,9 @@
           margin: 0 auto;
           padding: 30px;
           border-bottom: 1px solid #e1e1e1;
+          &:last-child {
+            border-bottom: 0px solid #e1e1e1;
+          }
           img {
             width: auto;
             height: auto;

@@ -6,6 +6,7 @@ import luukHader from '../../../assets/luukHeader.png'
 import { Link } from "react-router-dom"
 import NavState from './context/navState';
 import ScrollAnimation from 'react-animate-on-scroll';
+import useOnClickOutside from './hooks/hooks'
 const Menu = styled.nav`
   position: absolute;
   top: 0px;
@@ -20,7 +21,7 @@ const Menu = styled.nav`
   height: 1000px;;
   max-width: 100%;
   margin-top: 0px;
-  padding-top: 100px;
+  padding-top: 53px;
   padding-right: 0px;
   align-items: stretch;
   background: rgba(51, 51, 51, 0.9);
@@ -94,7 +95,7 @@ SideMenu.defaultProps = {
   children: (
     <>
       <NavState>
-        <Link to='./' className='burger-link'   >
+        <Link to='./' className='burger-link' >
           <MenuLink href="/" >Главная</MenuLink>
         </Link>
       </NavState>
@@ -112,12 +113,6 @@ SideMenu.defaultProps = {
       <Link to='./contacts' className='burger-link'>
         <MenuLink>Контакты</MenuLink>
       </Link>
-      <Link to='./shop' className='burger-link'>
-        <MenuLinkLow href="/contact">Скидки</MenuLinkLow>
-      </Link>
-      <a to='#hits' className='burger-link'>
-        <MenuLinkLow href="/contact">Акции</MenuLinkLow>
-      </a>
       <ScrollAnimation animateIn='fadeIn' animateOut='fadeOut' className='action' delay={400}>
         <img src={luukHader} alt='img' className='luukHedaer' />
       </ScrollAnimation>

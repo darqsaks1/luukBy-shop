@@ -47,12 +47,15 @@
       }
       .smile {
         position: relative;
-
         height: auto;
         width: auto;
+        top: -40px;
+        right: 10px;
         @media (max-width: 1024px) {
           width: 341px;
           height: 222px;
+          top:  0;
+          right: 0;
         }
         @media (max-width: 768px) {
           width: 260px;

@@ -33,7 +33,7 @@ const Header = () => {
                     </div>
                     <div>
                         <Link to='/delivery'>
-                           Оплата
+                            Оплата
                     </Link>
                     </div>
                 </div>

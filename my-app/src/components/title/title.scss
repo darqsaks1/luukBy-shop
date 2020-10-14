@@ -5,9 +5,11 @@
   align-items: center;
   width: 100%;
   height: 128px;
+  
   background-image: whitesmoke;
   @media (max-width: 620px) {
     justify-content: space-around;
+    padding-top: 60px;
   }
   .image-logo {
     margin-left: 99px;

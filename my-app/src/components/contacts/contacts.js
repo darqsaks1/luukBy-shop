@@ -36,7 +36,7 @@ const Contacts = () => {
                              </div>
                             <div className='contact '>
                                 <img src={timeImg} alt='icon-footer' />
-                            admin@luuk.by
+                        24/7
                             </div>
                             <div className='contact '>
                                 <img src={moneyImg} alt='icon-footer' />

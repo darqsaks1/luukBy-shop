@@ -11,8 +11,13 @@
   font-size: 15px;
   line-height: 20px;
   background-color: rgba(51, 51, 51, 1);
+
   @media (max-width: 620px) {
     justify-content: space-between;
+    position: fixed;
+    top: 0;
+
+    z-index: 99999;
   }
   .header-list {
     margin-left: 101px;
@@ -54,7 +59,10 @@
         margin-right: 20px;
       }
       @media (max-width: 620px) {
-        margin-right:10px;
+        margin-right: 10px;
+      }
+      @media (max-width: 340px) {
+        font-size: 12px;
       }
       img {
         margin-right: 5px;
@@ -94,13 +102,12 @@
   }
 }
 
-
-.luukHedaer  {
+.luukHedaer {
   align-self: center;
 }
 
 .burger-link {
-    width: 80%;
-    align-self: flex-end;
-    text-decoration: none;
+  width: 80%;
+  align-self: flex-end;
+  text-decoration: none;
 }

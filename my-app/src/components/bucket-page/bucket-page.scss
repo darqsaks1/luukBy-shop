@@ -33,7 +33,7 @@
       width: 100%;
     }
     .titles-of-products {
-      display: flex;
+      display: none;
       flex-direction: row;
       width: 100%;
       justify-content: space-around;
@@ -342,7 +342,13 @@
           display: flex;
           flex-direction: row;
           margin-bottom: 10px;
+          position: relative;
+          right:12px;
           align-items: center;
+          @media (max-width: 645px) {
+           
+            right:2px;
+          }
           .end {
             position: relative;
             top: 5px;
@@ -354,6 +360,7 @@
             padding: 10px;
             @media (max-width: 645px) {
               left: 40px;
+              right:0;
             }
           }
           .price-block-fin {
